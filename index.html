@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi — Catethub</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    background: #ffffff;
+  }
+  h1 {
+    color: #0E4F3C;
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+  h2 {
+    color: #0E4F3C;
+    font-size: 1.2rem;
+    margin-top: 36px;
+    border-bottom: 2px solid #E8F5EE;
+    padding-bottom: 6px;
+  }
+  p, li { color: #333; }
+  ul { padding-left: 20px; }
+  .highlight {
+    background: #E8F5EE;
+    border-left: 4px solid #0E4F3C;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  a { color: #0E4F3C; }
+  footer {
+    margin-top: 48px;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Kebijakan Privasi Catethub</h1>
+<p class="updated">Terakhir diperbarui: 2 November 2026</p>
+
+<div class="highlight">
+  <strong>Ringkasan singkat:</strong> Catethub adalah aplikasi pencatat keuangan pribadi yang berjalan sepenuhnya secara offline. Seluruh data Anda (transaksi, kategori, budget, pengingat) disimpan hanya di perangkat Anda sendiri. Catethub tidak memiliki server, tidak mengumpulkan data Anda, dan tidak membagikan data apa pun kepada pihak ketiga.
+</div>
+
+<h2>1. Data yang Dikelola Aplikasi</h2>
+<p>Catethub menyimpan data berikut, seluruhnya di penyimpanan lokal perangkat Anda (database SQLite di dalam aplikasi):</p>
+<ul>
+  <li>Data transaksi keuangan yang Anda input (nominal, tanggal, kategori, deskripsi, label)</li>
+  <li>Kategori transaksi (termasuk kategori custom yang Anda buat)</li>
+  <li>Pengaturan budget per kategori atau beberapa kategori</li>
+  <li>Pengingat (reminder) yang Anda atur, termasuk kode referensi opsional yang Anda isi sendiri</li>
+  <li>Foto lampiran yang Anda tambahkan pada transaksi (disimpan di penyimpanan lokal perangkat)</li>
+  <li>Preferensi aplikasi (mata uang, tema terang/gelap)</li>
+</ul>
+<p>Semua data di atas <strong>tidak pernah dikirim ke server mana pun</strong>. Catethub tidak terhubung ke internet untuk fungsi inti apa pun.</p>
+
+<h2>2. Data yang TIDAK Dikumpulkan</h2>
+<p>Catethub tidak menggunakan layanan analytics, crash reporting, maupun iklan pihak ketiga apa pun (seperti Google Analytics, Firebase Analytics, Firebase Crashlytics, atau AdMob). Akibatnya, aplikasi ini tidak mengumpulkan:</p>
+<ul>
+  <li>Data identitas pribadi (nama, alamat, nomor telepon)</li>
+  <li>Data lokasi</li>
+  <li>Data penggunaan aplikasi untuk keperluan analitik</li>
+  <li>Data perangkat untuk keperluan iklan</li>
+</ul>
+
+<h2>3. Fitur Backup &amp; Restore</h2>
+<p>Catethub menyediakan fitur backup dan restore data secara manual, yang sepenuhnya dikendalikan oleh Anda:</p>
+<!-- <p>Catethub menyediakan fitur backup dan restore data secara manual, yang sepenuhnya dikendalikan oleh Anda:</p> -->
+<!-- <ul>
+  <li>File backup diekspor ke penyimpanan perangkat Anda sendiri, dalam bentuk file terenkripsi (.enc) yang dilindungi passphrase yang Anda tentukan sendiri.</li>
+  <li>Passphrase backup tidak pernah disimpan di mana pun oleh aplikasi — Anda bertanggung jawab penuh untuk mengingatnya.</li>
+  <li>Anda dapat memindahkan file backup ini sendiri ke perangkat lain atau layanan penyimpanan pilihan Anda (email, WhatsApp, cloud storage pribadi, dll) — proses ini sepenuhnya di luar kendali dan tanggung jawab aplikasi Catethub.</li>
+  <li>Lampiran foto tidak disertakan dalam file backup.</li>
+</ul> -->
+
+<h2>4. Izin Aplikasi (Permissions)</h2>
+<p>Catethub meminta beberapa izin sistem Android berikut, digunakan hanya untuk fungsi yang relevan:</p>
+<ul>
+  <li><strong>Notifikasi</strong> — untuk menampilkan pengingat (reminder) yang Anda atur sendiri di dalam aplikasi.</li>
+  <li><strong>Kamera/Galeri</strong> — untuk memilih atau mengambil foto lampiran pada transaksi, hanya saat Anda memilih untuk menambahkan foto.</li>
+  <li><strong>Penyimpanan</strong> — untuk menyimpan file backup dan laporan PDF yang Anda ekspor sendiri.</li>
+</ul>
+<p>Tidak ada izin yang digunakan untuk mengirim data Anda keluar dari perangkat tanpa sepengetahuan Anda.</p>
+
+<h2>5. Anak-Anak</h2>
+<p>Catethub tidak ditujukan untuk anak-anak dan tidak secara sengaja mengumpulkan data dari anak-anak di bawah usia yang ditentukan oleh hukum yang berlaku di wilayah Anda.</p>
+
+<h2>6. Perubahan Kebijakan Privasi</h2>
+<p>Kebijakan privasi ini dapat diperbarui dari waktu ke waktu. Perubahan akan dipublikasikan di halaman ini dengan tanggal pembaruan yang diperbarui.</p>
+
+<h2>7. Hubungi Kami</h2>
+<p>Jika Anda memiliki pertanyaan mengenai kebijakan privasi ini, silakan hubungi:</p>
+<p>📧 <a href="pundikarsadigital@gmail.com">pundikarsadigital@gmail.com</a></p>
+<p>📞 Telepon/WhatsApp: <a href="tel:+6285155470876">+62 851-5547-0876</a></p>
+
+<footer>
+  Kebijakan Privasi ini berlaku untuk aplikasi Catethub yang tersedia di Google Play Store.
+</footer>
+
+</body>
+</html>
